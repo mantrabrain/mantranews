@@ -7,7 +7,8 @@ module.exports = function (grunt) {
         // Setting folder templates.
         dirs: {
             js: 'assets/js',
-            css: 'assets/css'
+            css: 'assets/css',
+            scss:'assets/scss'
         },
 
         // JavaScript linting with JSHint.
@@ -74,7 +75,7 @@ module.exports = function (grunt) {
             compile: {
                 files: [{
                     expand: true,
-                    cwd: '<%= dirs.css %>/',
+                    cwd: '<%= dirs.scss %>/',
                     src: ['*.scss'],
                     dest: '<%= dirs.css %>/',
                     ext: '.css'
@@ -120,7 +121,8 @@ module.exports = function (grunt) {
             css: {
                 files: [
                     '<%= dirs.css %>/*.scss',
-                    '<%= dirs.css %>/**/*.scss'
+                    '<%= dirs.css %>/**/*.scss',
+                    '<%= dirs.scss %>/**/*.scss'
 
                 ],
                 // tasks: ['sass', 'rtlcss', 'cssmin', 'concat']
@@ -138,10 +140,10 @@ module.exports = function (grunt) {
         // Generate POT files.
         makepot: {
             options: {
-                type: 'wp-plugin',
+                type: 'wp-themes',
                 domainPath: 'languages/',
                 potHeaders: {
-                    'report-msgid-bugs-to': 'mantrabrainofficial@gmail.com',
+                    'report-msgid-bugs-to': 'mantrabrain@gmail.com',
                     'language-team': 'LANGUAGE <EMAIL@ADDRESS>'
                 }
             },
@@ -207,7 +209,7 @@ module.exports = function (grunt) {
                 processors: [
                     require('autoprefixer')({
                         browsers: [
-                        	'last 4 versions',
+                            'last 4 versions',
                             '> 0.1%',
                             'ie 8',
                             'ie 9',
@@ -285,7 +287,7 @@ module.exports = function (grunt) {
         'sass',
         'rtlcss',
         'postcss',
-       'cssmin',
+        'cssmin',
         'concat'
     ]);
 

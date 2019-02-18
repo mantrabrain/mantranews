@@ -518,7 +518,7 @@ Clearings
 #content .block-header,
 #content .widget .widget-title-wrapper,
 #content .related-articles-wrapper .widget-title-wrapper {
-  background-color: #00efec; }
+  background-color: #289afe; }
 
 #content .block-header .block-title,
 #content .widget .widget-title,
@@ -2336,7 +2336,7 @@ Error 404 css
 Archive page  css
 --------------------------------------------------------------*/
 .archive .page-header {
-  background: #00efec none repeat scroll 0 0;
+  background: #289afe none repeat scroll 0 0;
   border-left: 4px solid #0166bf;
   line-height: 24px;
   margin-bottom: 30px;
