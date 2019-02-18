@@ -21,7 +21,7 @@ $(document).ready(function () {
         maxSlides: 3,
         speed: 3000,
         moveSlides:1,
-        controls: true,
+        controls: true
     };
     $('.breaking-news-slider').each(function () {
         var duration, direction;

@@ -1,10 +1,10 @@
-# Copyright (C) 2019
-# This file is distributed under the same license as the  package.
+# <!=Copyright (C) 2019 Mantrabrain
+# This file is distributed under the GNU General Public License v3 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Mantranews 1.0.1\n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2019-02-18 03:09:43+00:00\n"
+"POT-Creation-Date: 2019-02-18 03:39:42+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -973,6 +973,33 @@ msgstr ""
 #: template-parts/content-single.php:32
 #. translators: %s: Name of current post.
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Mantranews"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://mantrabrain.com/downloads/mantranews-wordpress-news-theme/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Mantranews is a  responsive newsportal style Free WordPress theme. This "
+"theme is mainly applicable for online magazines, newspaper, publishing, "
+"personal blogs and any kind of news sites."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mantrabrain"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://mantrabrain.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "News Template"
 msgstr ""
 
 #: comments.php:34

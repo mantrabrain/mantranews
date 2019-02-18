@@ -2,7 +2,7 @@
 Contributors:       Mantrabrain
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.0.2
-Version:            1.0.1
+Version:            1.0.2
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               news, grid-layout, custom-colors, one-column, two-columns, three-columns, left-sidebar, right-sidebar, featured-images, footer-widgets, full-width-template, theme-options, translation-ready, rtl-language-support, custom-background, threaded-comments, custom-menu, custom-logo, post-formats, editor-style
@@ -70,8 +70,9 @@ Mantranews bundles the following third-party resources:
 
 
 == Changelog ==
-= 1.0.2 - 2019/02/27 =
+= 1.0.2 - 2019/02/18 =
     * Screenshot changed
+    * SCSS file organize
 = 1.0.1 - 2019/01/09 =
     * Issue fixed
 = 1.0.0 - 2019/01/01 =

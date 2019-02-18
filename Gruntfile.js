@@ -57,13 +57,6 @@ module.exports = function (grunt) {
                     dest: '<%= dirs.js %>/',
                     ext: '.min.js'
                 }]
-            },
-            vendor: {
-                files: {
-                    '<%= dirs.js %>/jquery-blockui/jquery.jquery.blockUI.min.js': ['<%= dirs.js %>/jquery-blockui/jquery.jquery.blockUI.js'],
-                    '<%= dirs.js %>/jquery-tiptip/jquery.tipTip.min.js': ['<%= dirs.js %>/jquery-tiptip/jquery.tipTip.js'],
-                    '<%= dirs.js %>/select2/select2.min.js': ['<%= dirs.js %>/select2/select2.js']
-                }
             }
         },
 
@@ -140,7 +133,7 @@ module.exports = function (grunt) {
         // Generate POT files.
         makepot: {
             options: {
-                type: 'wp-themes',
+                type: 'wp-theme',
                 domainPath: 'languages/',
                 potHeaders: {
                     'report-msgid-bugs-to': 'mantrabrain@gmail.com',
@@ -243,10 +236,14 @@ module.exports = function (grunt) {
                     '!vendor/**',
                     '!Gruntfile.js',
                     '!package.json',
+                    '!package-lock.json',
                     '!composer.json',
                     '!composer.lock',
                     '!node_modules/**',
-                    '!phpcs.ruleset.xml'
+                    '!phpcs.ruleset.xml',
+                    '!.editorconfig',
+                    '!.gitignore'
+
                 ],
                 dest: 'mantranews',
                 expand: true
