@@ -257,6 +257,7 @@ if (!function_exists('mantranews_feature_slider_layout')) :
 
 endif;
 //no of columns
+global $mantranews_grid_columns;
 $mantranews_grid_columns = array(
     '1' => esc_html__('Select No. of Columns', 'mantranews'),
     '2' => esc_html__('2 Columns', 'mantranews'),
