@@ -70,6 +70,8 @@ Mantranews bundles the following third-party resources:
 
 
 == Changelog ==
+= 1.0.3 - 2019/  =
+    * Fix - global keyword issue on variable fixed
 = 1.0.2 - 2019/02/18 =
     * Screenshot changed
     * SCSS file organize
