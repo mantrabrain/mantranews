@@ -300,6 +300,13 @@ if (!class_exists('Mantranews_Core')) :
             require get_template_directory() . '/core/admin/inc/mantranews-sanitize.php'; //custom classes
 
 
+            /**
+             * Load TGMPA Configs.
+             */
+            require_once(MANTRANEWS_CORE_DIR . '/tgm-plugin-activation/class-tgm-plugin-activation.php');
+
+            require_once(MANTRANEWS_CORE_DIR . '/tgm-plugin-activation/tgmpa-mantranews.php');
+
 
         }
     }
