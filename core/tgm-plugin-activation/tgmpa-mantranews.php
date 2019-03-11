@@ -27,7 +27,7 @@ function mantranews_register_required_plugins()
         array(
             'name' => 'Mantrabrain Starter Sites',
             'slug' => 'mantrabrain-starter-sites',
-            'required' => true,
+            'required' => false,
         ),
 
     );
