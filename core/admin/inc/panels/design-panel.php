@@ -398,7 +398,7 @@ function mantranews_design_settings_register( $wp_customize ) {
     );
     $wp_customize->add_setting(
         'site_title_case_design_options', array(
-            'default'           => 'default',
+            'default'           => 'none',
             'sanitize_callback' => 'mantranews_sanitize_title_case_design',
         )
     );
