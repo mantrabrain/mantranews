@@ -46,3 +46,4 @@ require get_template_directory() . '/core/admin/inc/panels/general-panel.php'; /
 require get_template_directory() . '/core/admin/inc/panels/header-panel.php'; //header settings panel
 require get_template_directory() . '/core/admin/inc/panels/design-panel.php'; //Design Settings panel
 require get_template_directory() . '/core/admin/inc/panels/additional-panel.php'; //Additional settings panel
+require get_template_directory() . '/core/admin/inc/panels/important-link-panel.php'; //Important Links Panel

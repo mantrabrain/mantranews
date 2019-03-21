@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Mantranews 1.0.5\n"
+"Project-Id-Version: Mantranews 1.0.6\n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2019-03-17 16:11:17+00:00\n"
+"POT-Creation-Date: 2019-03-21 06:58:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -506,6 +506,38 @@ msgstr ""
 
 #: core/admin/inc/panels/header-panel.php:219
 msgid "Enable/disable option for Menu Sticky"
+msgstr ""
+
+#: core/admin/inc/panels/important-link-panel.php:24
+msgid "View Pro"
+msgstr ""
+
+#: core/admin/inc/panels/important-link-panel.php:28
+msgid "Theme Info"
+msgstr ""
+
+#: core/admin/inc/panels/important-link-panel.php:32
+msgid "Support"
+msgstr ""
+
+#: core/admin/inc/panels/important-link-panel.php:36
+msgid "Documentation"
+msgstr ""
+
+#: core/admin/inc/panels/important-link-panel.php:40
+msgid "View Demo"
+msgstr ""
+
+#: core/admin/inc/panels/important-link-panel.php:44
+msgid "Rate this theme"
+msgstr ""
+
+#: core/admin/inc/panels/important-link-panel.php:56
+msgid "Mantranews Important Links"
+msgstr ""
+
+#: core/admin/inc/panels/important-link-panel.php:68
+msgid "Important Links"
 msgstr ""
 
 #: core/class-mantranews-core.php:150
