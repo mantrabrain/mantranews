@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mantranews 1.0.6\n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2019-03-21 06:58:49+00:00\n"
+"POT-Creation-Date: 2019-03-26 12:07:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,6 +12,23 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: core/about-theme/mantranews-about.php:509
+#: core/about-theme/mantranews-about.php:510
+msgid "6"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:504
+msgid "7"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:485
+msgid "15"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:505
+msgid "16"
+msgstr ""
 
 #: 404.php:19
 msgid "404"
@@ -45,6 +62,329 @@ msgstr ""
 
 #: comments.php:92
 msgid "Comments are closed."
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:34
+msgid "About"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:72
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:76
+msgid "Cheat in &#8217; huh?"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:93
+msgid "Dismiss"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:94
+msgid ""
+"Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
+"our theme can offer please make sure you visit our %2$s welcome page %3$s."
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:96
+msgid "Get started with %1$s"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:131
+#: core/admin/inc/panels/important-link-panel.php:28
+msgid "Theme Info"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:133
+#: core/admin/inc/panels/important-link-panel.php:40
+msgid "View Demo"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:135
+#: core/about-theme/mantranews-about.php:211
+msgid "View PRO version"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:137
+#: core/admin/inc/panels/important-link-panel.php:44
+msgid "Rate this theme"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:146
+msgid "Free Vs Pro"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:150
+msgid "More Themes"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:154
+msgid "Changelog"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:191
+msgid "Theme Customizer"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:192
+msgid "All Theme Options are available via Customize screen."
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:193
+#: core/about-theme/mantranews-about.php:278
+msgid "Customize"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:197
+#: core/about-theme/mantranews-about.php:199
+#: core/admin/inc/panels/important-link-panel.php:36
+msgid "Documentation"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:198
+msgid "Please view our documentation page to setup the theme."
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:203
+msgid "Got theme support question?"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:204
+msgid "Please put it in our dedicated support forum."
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:205
+#: core/admin/inc/panels/important-link-panel.php:32
+msgid "Support"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:209
+msgid "Need more features?"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:210
+#: core/about-theme/mantranews-about.php:438
+msgid "Upgrade to PRO version for more exciting features."
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:215
+msgid "Have you need customization?"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:216
+msgid "Please send message with your requirement."
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:217
+msgid "Customization"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:221
+#: core/about-theme/mantranews-about.php:224
+msgid "Translate %1$s"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:222
+msgid "Click below to translate this theme into your own language."
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:233
+msgid "Return to Updates"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:233
+msgid "Return to Dashboard &rarr; Updates"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:236
+msgid "Go to Dashboard &rarr; Home"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:236
+msgid "Go to Dashboard"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:276
+#: core/tgm-plugin-activation/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:314
+#: core/tgm-plugin-activation/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:323
+msgid "Install Now"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:326
+msgid "Live Preview"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:386
+msgid "View changelog below:"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:443
+msgid "Features"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Mantranews"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:445
+msgid "Mantranews Pro"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:450
+msgid "Price"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:451
+msgid "Free"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:452
+msgid "$48 to $68"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:455
+msgid "Import Demo Data"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:461
+msgid "Category color options"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:467
+msgid "Advance Featured Slider"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:473
+msgid "Parallax Header"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:478
+msgid "Parallax Footer"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:483
+msgid "Additional color options"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:488
+msgid "Primary color option"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:493
+msgid "Font size options"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:498
+msgid "Google fonts options"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:500
+msgid "500+"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:503
+msgid "Custom widgets"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:508
+msgid "Social icons"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:513
+msgid "Social sharing"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:518
+msgid "Site layout option"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:523
+msgid "Options in breaking news"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:528
+msgid "Change read more text"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:533
+msgid "Related posts"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:538
+msgid "Footer copyright editor"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:543
+msgid "728x90 Advertisement"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:548
+msgid "Featured category slider"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:553
+msgid "Random posts widget"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:558
+msgid "Tabbed widget"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:563
+msgid "Videos"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:569
+msgid "WooCommerce compatible"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:574
+msgid "Multiple header options"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:579
+msgid "Readmore flying card"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:584
+msgid "Weather widget"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:589
+msgid "Currency converter widget"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:594
+msgid "Category enable/disable option"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:599
+msgid "Reading indicator option"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:604
+msgid "Lightbox support"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:609
+msgid "Call to action widget"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:614
+msgid "Contact us template"
+msgstr ""
+
+#: core/about-theme/mantranews-about.php:622
+#: core/admin/inc/panels/important-link-panel.php:24
+msgid "View Pro"
 msgstr ""
 
 #: core/admin/inc/mantranews-custom-classes.php:23
@@ -508,30 +848,6 @@ msgstr ""
 msgid "Enable/disable option for Menu Sticky"
 msgstr ""
 
-#: core/admin/inc/panels/important-link-panel.php:24
-msgid "View Pro"
-msgstr ""
-
-#: core/admin/inc/panels/important-link-panel.php:28
-msgid "Theme Info"
-msgstr ""
-
-#: core/admin/inc/panels/important-link-panel.php:32
-msgid "Support"
-msgstr ""
-
-#: core/admin/inc/panels/important-link-panel.php:36
-msgid "Documentation"
-msgstr ""
-
-#: core/admin/inc/panels/important-link-panel.php:40
-msgid "View Demo"
-msgstr ""
-
-#: core/admin/inc/panels/important-link-panel.php:44
-msgid "Rate this theme"
-msgstr ""
-
 #: core/admin/inc/panels/important-link-panel.php:56
 msgid "Mantranews Important Links"
 msgstr ""
@@ -850,10 +1166,6 @@ msgstr ""
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: core/tgm-plugin-activation/class-tgm-plugin-activation.php:2321
-msgid "Active"
-msgstr ""
-
 #: core/tgm-plugin-activation/class-tgm-plugin-activation.php:2327
 msgid "Required Update not Available"
 msgstr ""
@@ -948,10 +1260,6 @@ msgstr ""
 
 #: core/tgm-plugin-activation/class-tgm-plugin-activation.php:2723
 msgid "Update"
-msgstr ""
-
-#: core/tgm-plugin-activation/class-tgm-plugin-activation.php:2726
-msgid "Activate"
 msgstr ""
 
 #: core/tgm-plugin-activation/class-tgm-plugin-activation.php:2757
@@ -1372,10 +1680,6 @@ msgstr ""
 #: template-parts/content-single.php:32
 #. translators: %s: Name of current post.
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#. Theme Name of the plugin/theme
-msgid "Mantranews"
 msgstr ""
 
 #. Theme URI of the plugin/theme

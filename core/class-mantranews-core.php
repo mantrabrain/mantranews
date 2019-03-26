@@ -301,6 +301,12 @@ if (!class_exists('Mantranews_Core')) :
 
 
             /**
+             * Load theme about page
+             */
+            require MANTRANEWS_CORE_DIR. '/about-theme/mantranews-about.php';
+
+
+            /**
              * Load TGMPA Configs.
              */
             require_once(MANTRANEWS_CORE_DIR . '/tgm-plugin-activation/class-tgm-plugin-activation.php');
