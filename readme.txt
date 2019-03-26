@@ -74,8 +74,9 @@ Mantranews bundles the following third-party resources:
 
 
 == Changelog ==
-= 1.0.6 - 2019/03/21  =
+= 1.0.6 - 2019/03/26  =
     * Fix - Added Important links
+    * Added - Theme about page added
 = 1.0.5 - 2019/03/17  =
     * Fix - Minor issue fixed
 = 1.0.4 - 2019/03/12  =

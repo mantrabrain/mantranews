@@ -4,7 +4,7 @@
  *
  * @package Mantrabrain
  * @subpackage Mantrabrain
- * @since 1.1.1
+ * @since 1.0.6
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
