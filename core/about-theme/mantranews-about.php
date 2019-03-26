@@ -132,7 +132,7 @@ class News_Portal_About {
 
 			<a href="<?php echo esc_url( apply_filters( 'mantranews_pro_theme_url', 'https://demo.mantrabrain.com/mantranews-wordpress-theme/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'mantranews' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'mantranews_pro_theme_url', 'https://mantrabrain.com/downloads/mantranews-pro-wordpress-news-theme/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'mantranews' ); ?></a>
+			<a href="<?php echo esc_url( apply_filters( 'mantranews_pro_theme_url', 'https://mantrabrain.com/downloads/mantranews-pro-wordpress-news-theme/?utm_source=free_customizer&utm_medium=mantranews_free&utm_campaign=free_about' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'mantranews' ); ?></a>
 
 			<a href="<?php echo esc_url( apply_filters( 'mantranews_pro_theme_url', 'https://wordpress.org/support/theme/mantranews/reviews/?filter=5' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'mantranews' ); ?></a>
 		</p>
@@ -208,7 +208,7 @@ class News_Portal_About {
 					<div class="col">
 						<h3><?php esc_html_e( 'Need more features?', 'mantranews' ); ?></h3>
 						<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'mantranews' ) ?></p>
-						<p><a href="<?php echo esc_url( 'https://mantrabrain.com/downloads/mantranews-pro-wordpress-news-theme/' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'View PRO version', 'mantranews' ); ?></a></p>
+						<p><a href="<?php echo esc_url( 'https://mantrabrain.com/downloads/mantranews-pro-wordpress-news-theme/?utm_source=free_customizer&utm_medium=mantranews_free&utm_campaign=free_about' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'View PRO version', 'mantranews' ); ?></a></p>
 					</div>
 
 					<div class="col">
@@ -619,7 +619,7 @@ class News_Portal_About {
 						<td></td>
 						<td></td>
 						<td class="btn-wrapper">
-							<a href="<?php echo esc_url( apply_filters( 'mantranews_pro_theme_url', 'https://mantrabrain.com/downloads/mantranews-pro-wordpress-news-theme/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Pro', 'mantranews' ); ?></a>
+							<a href="<?php echo esc_url( apply_filters( 'mantranews_pro_theme_url', 'https://mantrabrain.com/downloads/mantranews-pro-wordpress-news-theme/?utm_source=free_customizer&utm_medium=mantranews_free&utm_campaign=free_about' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Pro', 'mantranews' ); ?></a>
 						</td>
 					</tr>
 				</tbody>
