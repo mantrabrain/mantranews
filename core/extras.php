@@ -16,14 +16,14 @@ if (!function_exists('mantranews_categories_color')):
     function mantranews_categories_color()
     {
 
-        $mgs_theme_color = esc_attr(get_theme_mod('mantranews_theme_color', ''));
+        $mb_theme_color = esc_attr(get_theme_mod('mantranews_theme_color', ''));
 
         $get_categories = get_terms('category', array('hide_empty' => false));
 
         $cat_color_css = '';
         foreach ($get_categories as $category) {
 
-            $cat_color = esc_attr(get_theme_mod('mantranews_category_color_' . strtolower($category->name), $mgs_theme_color));
+            $cat_color = esc_attr(get_theme_mod('mantranews_category_color_' . strtolower($category->name), $mb_theme_color));
             $cat_hover_color = esc_attr(mantranews_hover_color($cat_color, '-50'));
             $cat_id = esc_attr($category->term_id);
 
@@ -51,53 +51,53 @@ if (!function_exists('mantranews_categories_color')):
             }
         }
 
-        $mgs_dynamic_css = '';
+        $mb_dynamic_css = '';
 
-        if (!empty($mgs_theme_color)) {
+        if (!empty($mb_theme_color)) {
 
 
-            $mgs_dynamic_css .= ".navigation .nav-links a,.bttn,button,input[type='button'],input[type='reset'],input[type='submit'],.navigation .nav-links a:hover,.bttn:hover,button,input[type='button']:hover,input[type='reset']:hover,input[type='submit']:hover,.edit-link .post-edit-link, .reply .comment-reply-link,.home-icon,.search-main,.header-search-wrapper .search-form-main .search-submit,.mb-slider-section .bx-controls a:hover,.widget_search .search-submit,.error404 .page-title,.archive.archive-classic .entry-title a:after,#mb-scrollup,.widget_tag_cloud .tagcloud a:hover,.sub-toggle,#site-navigation ul > li:hover > .sub-toggle, #site-navigation ul > li.current-menu-item .sub-toggle, #site-navigation ul > li.current-menu-ancestor .sub-toggle{ background:" . $mgs_theme_color . "} .breaking_news_wrap .bx-controls-direction a, .breaking_news_wrap .bx-controls-direction a:hover:before{color:#fff;}\n";
+            $mb_dynamic_css .= ".navigation .nav-links a,.bttn,button,input[type='button'],input[type='reset'],input[type='submit'],.navigation .nav-links a:hover,.bttn:hover,button,input[type='button']:hover,input[type='reset']:hover,input[type='submit']:hover,.edit-link .post-edit-link, .reply .comment-reply-link,.home-icon,.search-main,.header-search-wrapper .search-form-main .search-submit,.mb-slider-section .bx-controls a:hover,.widget_search .search-submit,.error404 .page-title,.archive.archive-classic .entry-title a:after,#mb-scrollup,.widget_tag_cloud .tagcloud a:hover,.sub-toggle,#site-navigation ul > li:hover > .sub-toggle, #site-navigation ul > li.current-menu-item .sub-toggle, #site-navigation ul > li.current-menu-ancestor .sub-toggle{ background:" . $mb_theme_color . "} .breaking_news_wrap .bx-controls-direction a, .breaking_news_wrap .bx-controls-direction a:hover:before{color:#fff;}\n";
 
-            $mgs_dynamic_css .= ".navigation .nav-links a,.bttn,button,input[type='button'],input[type='reset'],input[type='submit'],.widget_search .search-submit,.widget_tag_cloud .tagcloud a:hover{ border-color:" . $mgs_theme_color . "}\n";
+            $mb_dynamic_css .= ".navigation .nav-links a,.bttn,button,input[type='button'],input[type='reset'],input[type='submit'],.widget_search .search-submit,.widget_tag_cloud .tagcloud a:hover{ border-color:" . $mb_theme_color . "}\n";
 
-            $mgs_dynamic_css .= ".comment-list .comment-body ,.header-search-wrapper .search-form-main{ border-top-color:" . $mgs_theme_color . "}\n";
+            $mb_dynamic_css .= ".comment-list .comment-body ,.header-search-wrapper .search-form-main{ border-top-color:" . $mb_theme_color . "}\n";
 
-            $mgs_dynamic_css .= "#site-navigation ul li,.header-search-wrapper .search-form-main:before{ border-bottom-color:" . $mgs_theme_color . "}\n";
+            $mb_dynamic_css .= "#site-navigation ul li,.header-search-wrapper .search-form-main:before{ border-bottom-color:" . $mb_theme_color . "}\n";
 
-            $mgs_dynamic_css .= ".archive .page-header,.block-header, .widget .widget-title-wrapper, .related-articles-wrapper .widget-title-wrapper{ border-left-color:" . $mgs_theme_color . "}\n";
+            $mb_dynamic_css .= ".archive .page-header,.block-header, .widget .widget-title-wrapper, .related-articles-wrapper .widget-title-wrapper{ border-left-color:" . $mb_theme_color . "}\n";
 
-            $mgs_dynamic_css .= "a,a:hover,a:focus,a:active,.entry-footer a:hover,.comment-author .fn .url:hover,#cancel-comment-reply-link,#cancel-comment-reply-link:before, .logged-in-as a,.top-menu ul li a:hover,#footer-navigation ul li a:hover,#site-navigation ul li a:hover,#site-navigation ul li.current-menu-item a,.mb-slider-section .slide-title a:hover,.featured-post-wrapper .featured-title a:hover,.mantranews_block_grid .post-title a:hover,.slider-meta-wrapper span:hover,.slider-meta-wrapper a:hover,.featured-meta-wrapper span:hover,.featured-meta-wrapper a:hover,.post-meta-wrapper > span:hover,.post-meta-wrapper span > a:hover ,.grid-posts-block .post-title a:hover,.list-posts-block .single-post-wrapper .post-content-wrapper .post-title a:hover,.column-posts-block .single-post-wrapper.secondary-post .post-content-wrapper .post-title a:hover,.widget a:hover::before,.widget li:hover::before,.entry-title a:hover,.entry-meta span a:hover,.post-readmore a:hover,.archive-classic .entry-title a:hover,
-            .archive-columns .entry-title a:hover,.related-posts-wrapper .post-title a:hover, .widget .widget-title a:hover,.related-articles-wrapper .related-title a:hover { color:" . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= "#content .block-header,#content .widget .widget-title-wrapper,#content .related-articles-wrapper .widget-title-wrapper {background-color: " . mantranews_sass_lighten($mgs_theme_color, '20%') . ";}\n";
-            $mgs_dynamic_css .= ".block-header .block-title, .widget .widget-title, .related-articles-wrapper .related-title {background-color: " . $mgs_theme_color . ";}\n";
-            $mgs_dynamic_css .= ".block-header, .widget .widget-title-wrapper, .related-articles-wrapper .widget-title-wrapper {border-left-color: " . $mgs_theme_color . ";border-bottom-color: " . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= "#content .block-header .block-title:after, #content .widget .widget-title:after, #content .related-articles-wrapper .related-title:after {border-bottom-color: " . $mgs_theme_color . ";border-bottom-color: " . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= ".archive .page-header {background-color: " . mantranews_sass_lighten($mgs_theme_color, '20%') . "}\n";
-            $mgs_dynamic_css .= "#site-navigation ul li.current-menu-item a,.bx-default-pager .bx-pager-item a.active {border-color: " . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= ".bottom-header-wrapper {border-color: " . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= ".top-menu ul li, .mantranews-ticker-wrapper ~ .top-header-section {border-color: " . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= ".ticker-caption, .breaking_news_wrap.fade .bx-controls-direction a.bx-next:hover, .breaking_news_wrap.fade .bx-controls-direction a.bx-prev:hover {background-color: " . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= ".ticker-content-wrapper .news-post a:hover, .mantranews-carousel .item .carousel-content-wrapper a:hover{color: " . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= ".mantranews-carousel .item .carousel-content-wrapper h3 a:hover, body .mantranews-carousel h3 a:hover, footer#colophon .mantranews-carousel h3 a:hover, footer#colophon a:hover, .widget a:hover, .breaking_news_wrap .article-content.feature_image .post-title a:hover{color: " . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= ".widget .owl-theme .owl-dots .owl-dot.active span{background: " . $mgs_theme_color . "}\n";
-            $mgs_dynamic_css .= ".rtl #content .block-header .block-title::after, .rtl #content .related-articles-wrapper .related-title::after, .rtl #content .widget .widget-title::after{border-right-color: " . $mgs_theme_color . "}\n";
+            $mb_dynamic_css .= "a,a:hover,a:focus,a:active,.entry-footer a:hover,.comment-author .fn .url:hover,#cancel-comment-reply-link,#cancel-comment-reply-link:before, .logged-in-as a,.top-menu ul li a:hover,#footer-navigation ul li a:hover,#site-navigation ul li a:hover,#site-navigation ul li.current-menu-item a,.mb-slider-section .slide-title a:hover,.featured-post-wrapper .featured-title a:hover,.mantranews_block_grid .post-title a:hover,.slider-meta-wrapper span:hover,.slider-meta-wrapper a:hover,.featured-meta-wrapper span:hover,.featured-meta-wrapper a:hover,.post-meta-wrapper > span:hover,.post-meta-wrapper span > a:hover ,.grid-posts-block .post-title a:hover,.list-posts-block .single-post-wrapper .post-content-wrapper .post-title a:hover,.column-posts-block .single-post-wrapper.secondary-post .post-content-wrapper .post-title a:hover,.widget a:hover::before,.widget li:hover::before,.entry-title a:hover,.entry-meta span a:hover,.post-readmore a:hover,.archive-classic .entry-title a:hover,
+            .archive-columns .entry-title a:hover,.related-posts-wrapper .post-title a:hover, .widget .widget-title a:hover,.related-articles-wrapper .related-title a:hover { color:" . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= "#content .block-header,#content .widget .widget-title-wrapper,#content .related-articles-wrapper .widget-title-wrapper {background-color: " . mantranews_sass_lighten($mb_theme_color, '20%') . ";}\n";
+            $mb_dynamic_css .= ".block-header .block-title, .widget .widget-title, .related-articles-wrapper .related-title {background-color: " . $mb_theme_color . ";}\n";
+            $mb_dynamic_css .= ".block-header, .widget .widget-title-wrapper, .related-articles-wrapper .widget-title-wrapper {border-left-color: " . $mb_theme_color . ";border-bottom-color: " . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= "#content .block-header .block-title:after, #content .widget .widget-title:after, #content .related-articles-wrapper .related-title:after {border-bottom-color: " . $mb_theme_color . ";border-bottom-color: " . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= ".archive .page-header {background-color: " . mantranews_sass_lighten($mb_theme_color, '20%') . "}\n";
+            $mb_dynamic_css .= "#site-navigation ul li.current-menu-item a,.bx-default-pager .bx-pager-item a.active {border-color: " . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= ".bottom-header-wrapper {border-color: " . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= ".top-menu ul li, .mantranews-ticker-wrapper ~ .top-header-section {border-color: " . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= ".ticker-caption, .breaking_news_wrap.fade .bx-controls-direction a.bx-next:hover, .breaking_news_wrap.fade .bx-controls-direction a.bx-prev:hover {background-color: " . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= ".ticker-content-wrapper .news-post a:hover, .mantranews-carousel .item .carousel-content-wrapper a:hover{color: " . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= ".mantranews-carousel .item .carousel-content-wrapper h3 a:hover, body .mantranews-carousel h3 a:hover, footer#colophon .mantranews-carousel h3 a:hover, footer#colophon a:hover, .widget a:hover, .breaking_news_wrap .article-content.feature_image .post-title a:hover{color: " . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= ".widget .owl-theme .owl-dots .owl-dot.active span{background: " . $mb_theme_color . "}\n";
+            $mb_dynamic_css .= ".rtl #content .block-header .block-title::after, .rtl #content .related-articles-wrapper .related-title::after, .rtl #content .widget .widget-title::after{border-right-color: " . $mb_theme_color . "}\n";
         }
 
         $site_title_design_options = get_theme_mod('site_title_design_options', 'plain');
         if ($site_title_design_options === 'line') {
-            $mgs_dynamic_css .= "#content .block-header, #content .related-articles-wrapper .widget-title-wrapper, #content .widget .widget-title-wrapper,
+            $mb_dynamic_css .= "#content .block-header, #content .related-articles-wrapper .widget-title-wrapper, #content .widget .widget-title-wrapper,
 			 #secondary .block-header, #secondary .widget .widget-title-wrapper, #secondary .related-articles-wrapper .widget-title-wrapper{background:none; background-color:transparent!important}\n";
         } else if ($site_title_design_options === 'plain') {
-            $mgs_dynamic_css .= "#content .block-header, #content .related-articles-wrapper .widget-title-wrapper, #content .widget .widget-title-wrapper,
+            $mb_dynamic_css .= "#content .block-header, #content .related-articles-wrapper .widget-title-wrapper, #content .widget .widget-title-wrapper,
 			 #secondary .block-header, #secondary .widget .widget-title-wrapper, #secondary .related-articles-wrapper .widget-title-wrapper{background:none; background-color:transparent!important}\n";
 
-            $mgs_dynamic_css .= "#content .block-header .block-title:after, #content .related-articles-wrapper .related-title:after, #content .widget .widget-title:after{border:none}\n";
+            $mb_dynamic_css .= "#content .block-header .block-title:after, #content .related-articles-wrapper .related-title:after, #content .widget .widget-title:after{border:none}\n";
         }
 
         $site_title_case_design_options = get_theme_mod('site_title_case_design_options', 'none');
 
         if ($site_title_case_design_options != 'none') {
-            $mgs_dynamic_css .= ".block-header .block-title, .widget .widget-title, .related-articles-wrapper .related-title{text-transform:" . $site_title_case_design_options . "}\n";
+            $mb_dynamic_css .= ".block-header .block-title, .widget .widget-title, .related-articles-wrapper .related-title{text-transform:" . $site_title_case_design_options . "}\n";
 
         }
         ?>
@@ -107,8 +107,8 @@ if (!function_exists('mantranews_categories_color')):
                     echo $cat_color_css;
                 }
 
-                if( !empty( $mgs_dynamic_css ) ) {
-                    echo $mgs_dynamic_css;
+                if( !empty( $mb_dynamic_css ) ) {
+                    echo $mb_dynamic_css;
                 }
             ?>
         </style>

@@ -7,7 +7,7 @@
  * @since 1.0.0
  */
 
-function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '', $mgs_field_value = '' ) {
+function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '', $mb_field_value = '' ) {
 
 	extract( $widget_field );
 
@@ -22,7 +22,7 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 					:</label>
 				<input class="widefat" id="<?php echo esc_attr( $instance->get_field_id( $mantranews_widgets_name ) ); ?>"
                            name="<?php echo esc_attr( $instance->get_field_name( $mantranews_widgets_name ) ); ?>" type="text"
-				       value="<?php echo esc_html( $mgs_field_value ); ?>"/>
+				       value="<?php echo esc_html( $mb_field_value ); ?>"/>
 
 				<?php if ( isset( $mantranews_widgets_description ) ) { ?>
 					<br/>
@@ -41,7 +41,7 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 					:</label>
 				<input class="widefat" id="<?php echo esc_attr( $instance->get_field_id( $mantranews_widgets_name ) ); ?>"
 				       name="<?php echo esc_attr( $instance->get_field_name( $mantranews_widgets_name ) ); ?>" type="text"
-				       value="<?php echo esc_html( $mgs_field_value ); ?>"/>
+				       value="<?php echo esc_html( $mb_field_value ); ?>"/>
 
 				<?php if ( isset( $mantranews_widgets_description ) ) { ?>
 					<br/>
@@ -57,7 +57,7 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 			<p>
 				<input id="<?php echo esc_attr( $instance->get_field_id( $mantranews_widgets_name ) ); ?>"
 				       name="<?php echo esc_attr( $instance->get_field_name( $mantranews_widgets_name ) ); ?>"
-				       type="checkbox" value="1" <?php checked( '1', $mgs_field_value ); ?>/>
+				       type="checkbox" value="1" <?php checked( '1', $mb_field_value ); ?>/>
 				<label
 					for="<?php echo esc_attr( $instance->get_field_id( $mantranews_widgets_name ) ); ?>"><?php echo esc_html( $mantranews_widgets_title ); ?></label>
 
@@ -78,15 +78,15 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 					:</label>
 				<textarea class="widefat" rows="<?php echo intval( $mantranews_widgets_row ); ?>"
 				          id="<?php echo esc_attr( $instance->get_field_id( $mantranews_widgets_name ) ); ?>"
-				          name="<?php echo esc_attr( $instance->get_field_name( $mantranews_widgets_name ) ); ?>"><?php echo esc_html( $mgs_field_value ); ?></textarea>
+				          name="<?php echo esc_attr( $instance->get_field_name( $mantranews_widgets_name ) ); ?>"><?php echo esc_html( $mb_field_value ); ?></textarea>
 			</p>
 			<?php
 			break;
 
 		// Radio fields
 		case 'radio' :
-			if ( empty( $mgs_field_value ) ) {
-				$mgs_field_value = $mantranews_widgets_default;
+			if ( empty( $mb_field_value ) ) {
+				$mb_field_value = $mantranews_widgets_default;
 			}
 			?>
 			<p>
@@ -100,7 +100,7 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 					<input id="<?php echo esc_attr( $instance->get_field_id( $athm_option_name ) ); ?>"
 					       name="<?php echo esc_attr( $instance->get_field_name( $mantranews_widgets_name ) ); ?>"
 					       type="radio"
-					       value="<?php echo esc_html( $athm_option_name ); ?>" <?php checked( $athm_option_name, $mgs_field_value ); ?> />
+					       value="<?php echo esc_html( $athm_option_name ); ?>" <?php checked( $athm_option_name, $mb_field_value ); ?> />
 					<label
 						for="<?php echo esc_attr( $instance->get_field_id( $athm_option_name ) ); ?>"><?php echo esc_html( $athm_option_title ); ?>
 						:</label>
@@ -116,8 +116,8 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 
 		// Select field
 		case 'select' :
-			if ( empty( $mgs_field_value ) ) {
-				$mgs_field_value = $mantranews_widgets_default;
+			if ( empty( $mb_field_value ) ) {
+				$mb_field_value = $mantranews_widgets_default;
 			}
 			$is_multiple = isset( $mantranews_widgets_field_multiple ) && $mantranews_widgets_field_multiple ? true : false;
 			?>
@@ -132,10 +132,10 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 				        id="<?php echo esc_attr( $instance->get_field_id( $mantranews_widgets_name ) ); ?>"
 				        class="widefat" <?php echo $is_multiple ? 'multiple="multiple"' : ''; ?>>
 					<?php foreach ( $mantranews_widgets_field_options as $athm_option_name => $athm_option_title ) {
-						$mgs_field_value_selected = is_array($mgs_field_value) ? in_array($athm_option_name, $mgs_field_value) ? $athm_option_name : -1 : $mgs_field_value;
+						$mb_field_value_selected = is_array($mb_field_value) ? in_array($athm_option_name, $mb_field_value) ? $athm_option_name : -1 : $mb_field_value;
 						?>
 						<option value="<?php echo esc_attr( $athm_option_name ); ?>"
-						        id="<?php echo esc_attr( $instance->get_field_id( $athm_option_name ) ); ?>" <?php selected( $athm_option_name, $mgs_field_value_selected); ?>><?php echo esc_html( $athm_option_title ); ?></option>
+						        id="<?php echo esc_attr( $instance->get_field_id( $athm_option_name ) ); ?>" <?php selected( $athm_option_name, $mb_field_value_selected); ?>><?php echo esc_html( $athm_option_title ); ?></option>
 					<?php } ?>
 				</select>
 
@@ -148,8 +148,8 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 			break;
 
 		case 'number' :
-			if ( empty( $mgs_field_value ) ) {
-				$mgs_field_value = $mantranews_widgets_default;
+			if ( empty( $mb_field_value ) ) {
+				$mb_field_value = $mantranews_widgets_default;
 			}
 			?>
 			<p>
@@ -159,7 +159,7 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 				<input name="<?php echo esc_attr( $instance->get_field_name( $mantranews_widgets_name ) ); ?>"
 				       type="number" step="1" min="1"
 				       id="<?php echo esc_attr( $instance->get_field_id( $mantranews_widgets_name ) ); ?>"
-				       value="<?php echo esc_html( $mgs_field_value ); ?>"/>
+				       value="<?php echo esc_html( $mb_field_value ); ?>"/>
 
 				<?php if ( isset( $mantranews_widgets_description ) ) { ?>
 					<br/>
@@ -190,21 +190,21 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 		 */
 		case 'selector':
 
-			if( empty( $mgs_field_value ) ) {
-				$mgs_field_value = $mantranews_widgets_default;
+			if( empty( $mb_field_value ) ) {
+				$mb_field_value = $mantranews_widgets_default;
 			}
 			?>
 			<p><span class="field-label"><label class="field-title"><?php echo esc_html( $mantranews_widgets_title ); ?></label></span></p>
 			<?php
 			echo '<div class="selector-labels">';
 			foreach ( $mantranews_widgets_field_options as $option => $val ){
-				$class = ( $mgs_field_value == $option ) ? 'selector-selected': '';
+				$class = ( $mb_field_value == $option ) ? 'selector-selected': '';
 				echo '<label class="'. esc_attr( $class ).'" data-val="'.esc_attr( $option ).'">';
 				echo '<img src="'.esc_url( $val ).'"/>';
 				echo '</label>';
 			}
 			echo '</div>';
-			echo '<input id="'.esc_attr( $instance->get_field_id( $mantranews_widgets_name ) ).'" data-default="'.esc_attr( $mgs_field_value ).'" type="hidden" value="'.esc_attr( $mgs_field_value ).'" name="'.esc_attr( $instance->get_field_name( $mantranews_widgets_name ) ).'"/>';
+			echo '<input id="'.esc_attr( $instance->get_field_id( $mantranews_widgets_name ) ).'" data-default="'.esc_attr( $mb_field_value ).'" type="hidden" value="'.esc_attr( $mb_field_value ).'" name="'.esc_attr( $instance->get_field_name( $mantranews_widgets_name ) ).'"/>';
 			break;
 		case 'upload' :
 
@@ -212,7 +212,7 @@ function mantranews_widgets_show_widget_field( $instance = '', $widget_field = '
 			$id     = esc_attr( $instance->get_field_id( $mantranews_widgets_name ) );
 			$class  = '';
 			$int    = '';
-			$value  = $mgs_field_value;
+			$value  = $mb_field_value;
 			$name   = esc_attr( $instance->get_field_name( $mantranews_widgets_name ) );
 
 			if ( $value ) {

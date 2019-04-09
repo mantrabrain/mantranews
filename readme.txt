@@ -77,6 +77,7 @@ Mantranews bundles the following third-party resources:
 = 1.0.7 - 2019/04/09  =
     * Fix - Carousel hover design issue
     * Fix - Archive page title design issue
+    * Fix - Variable naming issue fixed
 = 1.0.6 - 2019/03/26  =
     * Fix - Added Important links
     * Added - Theme about page added

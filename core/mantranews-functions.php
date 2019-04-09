@@ -349,13 +349,13 @@ if (!function_exists('mantranews_block_title')):
             $cat_link = get_category_link($block_cat_id);
         }
         if (!empty($block_title)) {
-            $mgs_widget_title = $block_title;
+            $mb_widget_title = $block_title;
         } elseif (!empty($block_cat_name)) {
-            $mgs_widget_title = $block_cat_name;
+            $mb_widget_title = $block_cat_name;
         } else {
-            $mgs_widget_title = '';
+            $mb_widget_title = '';
         }
-        if (empty($mgs_widget_title)) {
+        if (empty($mb_widget_title)) {
             return;
         }
         ?>
@@ -364,10 +364,10 @@ if (!function_exists('mantranews_block_title')):
                 <?php
                 if (!empty($block_cat_id)) {
                     ?>
-                    <a href="<?php echo esc_url($cat_link); ?>"><?php echo esc_html($mgs_widget_title); ?></a>
+                    <a href="<?php echo esc_url($cat_link); ?>"><?php echo esc_html($mb_widget_title); ?></a>
                     <?php
                 } else {
-                    echo esc_html($mgs_widget_title);
+                    echo esc_html($mb_widget_title);
                 }
                 ?>
             </h3>

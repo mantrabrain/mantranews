@@ -15,10 +15,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php
-			$mgs_cat_id = get_query_var( 'cat' );
+			$mb_cat_id = get_query_var( 'cat' );
 			if ( have_posts() ) : ?>
 
-				<header class="page-header mb-cat-<?php echo esc_attr( $mgs_cat_id ); ?>">
+				<header class="page-header mb-cat-<?php echo esc_attr( $mb_cat_id ); ?>">
 					<h1 class="page-title mb-archive-title"><?php the_archive_title(); ?></h1>
 				</header><!-- .page-header -->
 				<?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
