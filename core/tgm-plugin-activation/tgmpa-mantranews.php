@@ -28,6 +28,10 @@ function mantranews_register_required_plugins()
             'name' => 'Mantrabrain Starter Sites',
             'slug' => 'mantrabrain-starter-sites',
             'required' => false,
+        ), array(
+            'name' => 'User Reactions',
+            'slug' => 'user-reactions',
+            'required' => false,
         ),
 
     );
