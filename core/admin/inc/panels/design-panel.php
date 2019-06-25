@@ -310,7 +310,7 @@ function mantranews_design_settings_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'mantranews_copyright_text',
 		array(
-			'default'           => esc_html__( '2018 mantranews', 'mantranews' ),
+			'default'           => esc_html__( '2019 mantranews', 'mantranews' ),
 			'capability'        => 'edit_theme_options',
 			'transport'         => 'postMessage',
 			'sanitize_callback' => 'mantranews_sanitize_text',
