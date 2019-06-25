@@ -18,10 +18,10 @@ function mantranews_register_required_plugins()
      */
     $plugins = array(
 
-        // Include Contact form 7 Importer as recommended
+        // Include Google AdSense 
         array(
-            'name' => 'Contact Form 7',
-            'slug' => 'contact-form-7',
+            'name' => 'Google AdSense And Ads Manager',
+            'slug' => 'universal-google-adsense-and-ads-manager',
             'required' => false,
         ),
         array(
