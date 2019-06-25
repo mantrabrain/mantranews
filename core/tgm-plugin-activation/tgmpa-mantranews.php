@@ -18,9 +18,9 @@ function mantranews_register_required_plugins()
      */
     $plugins = array(
 
-        // Include Google AdSense 
+        // Include Google AdSense
         array(
-            'name' => 'Google AdSense And Ads Manager',
+            'name' => 'Universal  Google AdSense And Ads Manager',
             'slug' => 'universal-google-adsense-and-ads-manager',
             'required' => false,
         ),
