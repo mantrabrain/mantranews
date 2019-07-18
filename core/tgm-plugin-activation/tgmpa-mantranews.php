@@ -20,17 +20,16 @@ function mantranews_register_required_plugins()
 
         // Include Google AdSense
         array(
-            'name' => 'Universal  Google AdSense And Ads Manager',
-            'slug' => 'universal-google-adsense-and-ads-manager',
-            'required' => false,
-        ),
-        array(
             'name' => 'Mantrabrain Starter Sites',
             'slug' => 'mantrabrain-starter-sites',
             'required' => false,
         ), array(
-            'name' => 'User Reactions',
-            'slug' => 'user-reactions',
+            'name' => 'Universal  Google AdSense And Ads Manager',
+            'slug' => 'universal-google-adsense-and-ads-manager',
+            'required' => false,
+        ), array(
+            'name' => 'WPForms Lite',
+            'slug' => 'wpforms-lite',
             'required' => false,
         ),
 
