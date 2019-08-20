@@ -3,8 +3,8 @@ Contributors:       Mantrabrain
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2.2
 Requires PHP:       5.4
-Version:            1.1.0
-Stable tag:         1.1.0
+Version:            1.1.1
+Stable tag:         1.1.1
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               news, grid-layout, custom-colors, one-column, two-columns, three-columns, left-sidebar, right-sidebar, featured-images, footer-widgets, full-width-template, theme-options, translation-ready, rtl-language-support, custom-background, threaded-comments, custom-menu, custom-logo, post-formats, editor-style
@@ -74,6 +74,9 @@ Mantranews bundles the following third-party resources:
 
 
 == Changelog ==
+= 1.1.1 - 2019/08/20  =
+    * Added - Readmore option updated
+    * Fix - Minor issue fixed
 = 1.1.0 - 2019/07/18  =
     * Added - Hero Banner and parallax header banner
     * Fix - Other minor issue fixed
