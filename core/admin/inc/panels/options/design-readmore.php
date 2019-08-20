@@ -20,7 +20,7 @@ $wp_customize->add_control(
     'mantranews_readmore_design_option', array(
         'type' => 'radio',
         'priority' => 10,
-        'label' => __('Design Option', 'mantranews'),
+        'label' => __('Readmore Option', 'mantranews'),
         'section' => 'mantranews_readmore_design_style',
         'choices' => array(
             'default' => __('Show WordPress Default', 'mantranews'),
