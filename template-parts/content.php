@@ -35,7 +35,7 @@
             <?php $mantranews_readmore_design_style = get_theme_mod('mantranews_readmore_design_option', 'default');
             if ($mantranews_readmore_design_style == 'always-show') { ?>
                 <a class="read-more-link" title="<?php the_title(); ?>"
-                   href="<?php the_permalink(); ?>"><span><?php _e('Read more', 'colormag'); ?></span></a>
+                   href="<?php the_permalink(); ?>"><span><?php _e('Read more', 'mantranews'); ?></span></a>
             <?php } ?>
 
         </div><!-- .entry-content -->
