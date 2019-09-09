@@ -218,6 +218,9 @@ function mantranews_body_classes($classes)
             $classes[] = 'archive-' . $mantranews_archive_layout;
         }
     }
+    if (is_page_template('templates/news-template.php')) {
+        $classes[] = 'mb-home-sidebar-' . get_theme_mod('mantranews_homepage_sidebar_alignment', 'right');
+    }
 
     return $classes;
 }

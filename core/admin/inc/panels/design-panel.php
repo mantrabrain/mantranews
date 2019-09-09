@@ -567,6 +567,8 @@ function mantranews_design_settings_register($wp_customize)
     );
 
     include_once "options/design-readmore.php";
+
+    include_once "options/design-homepage.php";
     // Title case design
     /**
      */
