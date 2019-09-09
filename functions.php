@@ -10,7 +10,7 @@
  */
 
 
-define('MANTRANEWS_THEME_VERSION', '1.1.1');
+define('MANTRANEWS_THEME_VERSION', '1.1.2');
 define('MANTRANEWS_THEME_SETTINGS', 'mantranews-settings');
 
 define('MANTRANEWS_THEME_DIR', trailingslashit(get_template_directory()));
