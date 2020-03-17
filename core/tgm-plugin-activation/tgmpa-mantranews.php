@@ -24,8 +24,8 @@ function mantranews_register_required_plugins()
             'slug' => 'mantrabrain-starter-sites',
             'required' => false,
         ), array(
-            'name' => 'Universal  Google AdSense And Ads Manager',
-            'slug' => 'universal-google-adsense-and-ads-manager',
+            'name' => 'Simple Google AdSense',
+            'slug' => 'simple-google-adsense',
             'required' => false,
         ), array(
             'name' => 'WPForms Lite',
