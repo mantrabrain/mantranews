@@ -153,9 +153,12 @@ class Mantranews_Block_Grid extends WP_Widget {
 			extract( $widget_field );
 
 			// Use helper function to get updated field values
-            if(isset($new_instance[$mantranews_widgets_name])) {
+            if (isset($new_instance[$mantranews_widgets_name])) {
                 $instance[$mantranews_widgets_name] = mantranews_widgets_updated_field_value($widget_field, $new_instance[$mantranews_widgets_name]);
-            }		}
+            } else {
+                $instance[$mantranews_widgets_name] = mantranews_widgets_updated_field_value($widget_field, null);
+            }
+		}
 
 		return $instance;
 	}
