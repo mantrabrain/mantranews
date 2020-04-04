@@ -456,8 +456,9 @@ class Mantranews_Block_Layout extends WP_widget {
 			extract( $widget_field );
 
 			// Use helper function to get updated field values
-			$instance[ $mantranews_widgets_name ] = mantranews_widgets_updated_field_value( $widget_field, $new_instance[ $mantranews_widgets_name ] );
-		}
+            if(isset($new_instance[$mantranews_widgets_name])) {
+                $instance[$mantranews_widgets_name] = mantranews_widgets_updated_field_value($widget_field, $new_instance[$mantranews_widgets_name]);
+            }		}
 
 		return $instance;
 	}
@@ -479,8 +480,9 @@ class Mantranews_Block_Layout extends WP_widget {
 
 			// Make array elements available as variables
 			extract( $widget_field );
-			$mantranews_widgets_field_value = ! empty( $instance[ $mantranews_widgets_name ] ) ? wp_kses_post( $instance[ $mantranews_widgets_name ] ) : '';
-			mantranews_widgets_show_widget_field( $this, $widget_field, $mantranews_widgets_field_value );
+			$mantranews_widgets_field_value = ! empty( $instance[ $mantranews_widgets_name ] ) ? ( $instance[ $mantranews_widgets_name ] ) : '';
+            $mantranews_widgets_field_value = is_string($mantranews_widgets_field_value) ? wp_kses_post($mantranews_widgets_field_value) : $mantranews_widgets_field_value;
+            mantranews_widgets_show_widget_field( $this, $widget_field, $mantranews_widgets_field_value );
 		}
 	}
 }
