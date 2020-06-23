@@ -13,7 +13,7 @@
  *
  * If none of the sidebars have widgets, then let's bail early.
  */
- 
+
 if( !is_active_sidebar( 'mantranews_footer_one' ) &&
 	!is_active_sidebar( 'mantranews_footer_two' ) &&
     !is_active_sidebar( 'mantranews_footer_three' ) &&
@@ -28,31 +28,29 @@ $mantranews_footer_layout = get_theme_mod( 'footer_widget_option', 'column3' );
             <div class="mb-footer-widget-wrapper clearfix">
             		<div class="mb-first-footer-widget mb-footer-widget">
             			<?php
-                			if ( !dynamic_sidebar( 'mantranews_footer_one' ) ):
-                			endif;
+                			dynamic_sidebar( 'mantranews_footer_one' );
+
             			?>
             		</div>
         		<?php if( $mantranews_footer_layout != 'column1' ){ ?>
                     <div class="mb-second-footer-widget mb-footer-widget">
             			<?php
-                			if ( !dynamic_sidebar( 'mantranews_footer_two' ) ):
-                			endif;
+                			dynamic_sidebar( 'mantranews_footer_two' );
+
             			?>
             		</div>
                 <?php } ?>
                 <?php if( $mantranews_footer_layout == 'column3' || $mantranews_footer_layout == 'column4' ){ ?>
                     <div class="mb-third-footer-widget mb-footer-widget">
                        <?php
-                           if ( !dynamic_sidebar( 'mantranews_footer_three' ) ):
-                           endif;
+                           dynamic_sidebar( 'mantranews_footer_three' );
                        ?>
                     </div>
                 <?php } ?>
                 <?php if( $mantranews_footer_layout == 'column4' ){ ?>
                     <div class="mb-fourth-footer-widget mb-footer-widget">
                        <?php
-                           if ( !dynamic_sidebar( 'mantranews_footer_four' ) ):
-                           endif;
+							dynamic_sidebar( 'mantranews_footer_four' );
                        ?>
                     </div>
                 <?php } ?>

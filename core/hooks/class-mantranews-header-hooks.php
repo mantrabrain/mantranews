@@ -78,8 +78,7 @@ if (!class_exists('Mantranews_Header_Hooks')) {
                     <div class="header-ads-wrapper">
                         <?php
                         if (is_active_sidebar('mantranews_header_ads_area')) {
-                            if (!dynamic_sidebar('mantranews_header_ads_area')):
-                            endif;
+                            dynamic_sidebar('mantranews_header_ads_area');
                         } ?>
                     </div><!-- .header-ads-wrapper -->
                 </div>

@@ -19,8 +19,7 @@ get_header(); ?>
 
 			<?php
 	        	if( is_active_sidebar( 'mantranews_home_slider_area' ) ) {
-	            	if ( !dynamic_sidebar( 'mantranews_home_slider_area' ) ):
-	            	endif;
+	        		dynamic_sidebar( 'mantranews_home_slider_area' );
 	         	}
 	        ?>
 
@@ -30,8 +29,7 @@ get_header(); ?>
 			<div class="home-primary-wrapper">
 					<?php
 			        	if( is_active_sidebar( 'mantranews_home_content_area' ) ) {
-			            	if ( !dynamic_sidebar( 'mantranews_home_content_area' ) ):
-			            	endif;
+			            	dynamic_sidebar( 'mantranews_home_content_area' );
 			         	}
 			        ?>
 
@@ -39,8 +37,7 @@ get_header(); ?>
 			<div class="home-secondary-wrapper">
 				<?php
 		        	if( is_active_sidebar( 'mantranews_home_sidebar' ) ) {
-		            	if ( !dynamic_sidebar( 'mantranews_home_sidebar' ) ):
-		            	endif;
+		            	dynamic_sidebar( 'mantranews_home_sidebar' );
 		         	}
 		        ?>
 			</div><!-- .home-secondary-wrapper -->

@@ -321,7 +321,7 @@ if (!function_exists('mantranews_query_args')):
         }
         if (is_array($mantranews_tag_id)) {
             if (count($mantranews_tag_id) == 1 && $mantranews_tag_id[0] === 0) {
-
+					$test = 'hello';
             } else {
                 $mantranews_args[$tag_parameter_query] = $mantranews_tag_id;
 
@@ -786,7 +786,8 @@ if (!function_exists('mantranews_is_parallax_header_enable')) {
     function mantranews_is_parallax_header_enable($control)
     {
 
-        if (!empty($control->manager->get_setting('mantranews_parallax_header')->value())) {
+    	$value = $control->manager->get_setting('mantranews_parallax_header')->value();
+        if (!empty($value)) {
             return true;
         } else {
             return false;
@@ -799,9 +800,10 @@ if (!function_exists('mantranews_is_hero_parallax_enabled')) {
 
     function mantranews_is_hero_parallax_enabled($control)
     {
+    	$value = $control->manager->get_setting('mantranews_parallax_header')->value();
 
         if (
-            !empty($control->manager->get_setting('mantranews_parallax_header')->value())
+            !empty($value)
             &&
             'enable' == $control->manager->get_setting('mantranews_enable_hero_parallax')->value()
         ) {
