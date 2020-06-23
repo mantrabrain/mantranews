@@ -1,10 +1,10 @@
 === Mantranews ===
 Contributors:       Mantrabrain
 Requires at least:  WordPress 4.0
-Tested up to:       WordPress 5.4
+Tested up to:       WordPress 5.4.2
 Requires PHP:       5.4
-Version:            1.1.4
-Stable tag:         1.1.4
+Version:            1.1.5
+Stable tag:         1.1.5
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               news, grid-layout, custom-colors, one-column, two-columns, three-columns, left-sidebar, right-sidebar, featured-images, footer-widgets, full-width-template, theme-options, translation-ready, rtl-language-support, custom-background, threaded-comments, custom-menu, custom-logo, post-formats, editor-style
@@ -57,6 +57,10 @@ Mantranews bundles the following third-party resources:
     OwlCarousel2, Copyright 2013-2017, David Deutsch
         License: MIT
         Source: https://github.com/OwlCarousel2/OwlCarousel2
+		
+	Design Reference
+        License: GPL
+        Source: https://themeegg.com
 			
    	Screenshot Images 
     Licenses: CCO Public Domain
