@@ -55,7 +55,7 @@ function mantranews_additional_settings_register( $wp_customize ) {
 				'mantranews_category_color_'.esc_html( strtolower($category_list->name) ),
 				array(
 					/* translators: %s: category namet */
-					'label'    => sprintf( esc_html__( ' %s', 'mantranews' ), esc_html( $category_list->name ) ),
+					'label'    => esc_html( $category_list->name ),
 					'section'  => 'mantranews_categories_color_section',
 					'priority' => absint($priority)
 				)

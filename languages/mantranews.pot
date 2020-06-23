@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mantranews 1.1.5\n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-06-23 12:17:27+00:00\n"
+"POT-Creation-Date: 2020-06-23 12:20:14+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -551,12 +551,8 @@ msgstr ""
 msgid "Categories Color"
 msgstr ""
 
-#: core/admin/inc/panels/additional-panel.php:58
-#. translators: %s: category namet
-msgid " %s"
-msgstr ""
-
 #: core/admin/inc/panels/additional-panel.php:71
+#. translators: %s: category namet
 msgid "Social Media"
 msgstr ""
 
